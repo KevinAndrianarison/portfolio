@@ -1,6 +1,7 @@
 import "./App.css";
 import Head from "./Head/Head";
 import Description from "./Description/Description";
+import NetworkList from "./NetworkList/NetworkList";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <div className="flex flex-col gap-5">
           <Head />
           <Description />
+          <NetworkList />
         </div>
       </div>
     </div>
