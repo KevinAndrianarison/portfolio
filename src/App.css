@@ -1,0 +1,10 @@
+.degrade {
+ background: radial-gradient(circle at top right, #1b1725, #2a2342, #3d316b, #0a0a14);
+}
+
+.profil{
+    background-image: url("./assets/481664796_1712371896010528_6077784313028032134_n.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
