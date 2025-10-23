@@ -3,13 +3,13 @@ import Project from "../ReusableComponent/Project";
 export default function Projects() {
   return (
     <div className="flex flex-col gap-5">
-      <h1 className="text-3xl aref font-bold">Projects</h1>
+      <h1 className="text-3xl aref font-bold">Mes récentes réalisations</h1>
       <div className="flex gap-5 flex-wrap">
         <Project
           name="E-laharagna"
           img="elaharagna"
-          description="
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident quos harum explicabo voluptatibus quis soluta atque, consequatur possimus animi rerum, adipisci ullam earum vitae sequi eos laborum maxime?  "
+          description="Application de gestion de file d’attente pour organiser les tickets dans les
+agences de l’OTIV Diana."
           status="En cours 🔄"
           stacks={[
             { name: "ReactJs", logo: "react" },
@@ -20,8 +20,8 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident q
         <Project
           name="OTIV-Diana"
           img="otivdiana"
-          description="
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident quos harum explicabo voluptatibus quis soluta atque, consequatur possimus animi rerum, adipisci ullam earum vitae sequi eos laborum maxime?  "
+          description="Site web de l’OTIV Diana, mettant en avant
+les informations et les services proposés"
           status="En cours 🔄"
           stacks={[
             { name: "NextJs", logo: "next" },
@@ -32,8 +32,8 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident q
         <Project
           name="GDS"
           img="gds"
-          description="
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident quos harum explicabo voluptatibus quis soluta atque, consequatur possimus animi rerum, adipisci ullam earum vitae sequi eos laborum maxime?  "
+          description="Application de gestion de stock pour
+l’ONG Sahi."
           status="Terminé 🟢"
           stacks={[
             { name: "ReactJs", logo: "react" },

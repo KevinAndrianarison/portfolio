@@ -3,7 +3,7 @@ import Container from "../ReusableComponent/Container";
 export default function Stacks() {
   return (
     <div className="flex flex-col gap-5">
-      <h1 className="text-3xl aref font-bold">Using</h1>
+      <h1 className="text-3xl aref font-bold">Technologies & outils</h1>
       <div className="flex gap-2 items-end flex-wrap">
         <Container logo="react" name="ReactJs" isStack />
         <Container logo="next" name="NextJs" isStack />
@@ -20,7 +20,7 @@ export default function Stacks() {
         <Container logo="npm" name="NPM" isStack />
         <Container logo="mysql" name="MySQL" isStack />
         <Container logo="mongodb" name="MongoDB" isStack />
-        <p className="aref">and many others...</p>
+        <p className="aref">et bien d’autres...</p>
       </div>
     </div>
   );
