@@ -1,10 +1,121 @@
 .degrade {
- background: radial-gradient(circle at top right, #1b1725, #2a2342, #3d316b, #0a0a14);
+  background: radial-gradient(
+    circle at top right,
+    #1b1725,
+    #2a2342,
+    #3d316b,
+    #0a0a14
+  );
 }
 
-.profil{
-    background-image: url("./assets/481664796_1712371896010528_6077784313028032134_n.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.profil {
+  background-image: url("./assets/481664796_1712371896010528_6077784313028032134_n.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.react {
+  background-image: url("./assets/react.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.next {
+  background-image: url("./assets/Next.js.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vue {
+  background-image: url("./assets/Vue.js.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nuxt {
+  background-image: url("./assets/Nuxt JS.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nest {
+  background-image: url("./assets/Nest.js.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.laravel {
+  background-image: url("./assets/Laravel.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.express {
+  background-image: url("./assets/Express.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tailwind {
+  background-image: url("./assets/Tailwind CSS.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.flutter {
+  background-image: url("./assets/Flutter.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.windows {
+  background-image: url("./assets/Windows 11.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.linux {
+  background-image: url("./assets/Linux.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.npm {
+  background-image: url("./assets/NPM.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nodejs {
+  background-image: url("./assets/Node.js.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mysql {
+  background-image: url("./assets/MySQL.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mongodb {
+  background-image: url("./assets/MongoDB.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
