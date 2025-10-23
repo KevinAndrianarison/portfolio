@@ -119,3 +119,24 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.elaharagna{
+  background-image: url("./assets/A.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.otivdiana{
+  background-image: url("./assets/B.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gds{
+  background-image: url("./assets/C.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

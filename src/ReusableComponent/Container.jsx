@@ -1,6 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Container({ icon, name, isStack, logo }) {
+export default function Container({
+  icon,
+  name,
+  isStack,
+  logo,
+  stackonProject,
+}) {
   return (
     <div
       className={`
@@ -9,7 +15,9 @@ export default function Container({ icon, name, isStack, logo }) {
             ? "bg-gray-700 border border-gray-600"
             : "bg-gray-600 hover:bg-gray-700"
         }
-     inline-flex items-center px-4 py-1 cursor-pointer `}
+     inline-flex items-center px-4 py-1 cursor-pointer ${
+       stackonProject ? "text-xs" : ""
+     }`}
     >
       <p>
         {icon && <FontAwesomeIcon icon={icon} className="mr-1" />}

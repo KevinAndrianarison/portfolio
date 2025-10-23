@@ -9,8 +9,8 @@ export default function Stacks() {
         <Container logo="next" name="NextJs" isStack />
         <Container logo="vue" name="VueJs" isStack />
         <Container logo="nuxt" name="NuxtJs" isStack />
-        <Container logo="nest" name="NestJs" isStack />
         <Container logo="laravel" name="Laravel" isStack />
+        <Container logo="nest" name="NestJs" isStack />
         <Container logo="express" name="Express" isStack />
         <Container logo="nodejs" name="NodeJs" isStack />
         <Container logo="tailwind" name="Tailwind" isStack />
