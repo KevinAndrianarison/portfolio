@@ -140,3 +140,24 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.sendBazar{
+  background-image: url("./assets/D.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fr{
+  background-image: url("./assets/france.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.en{
+  background-image: url("./assets/royaume-uni.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

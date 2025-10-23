@@ -1,15 +1,10 @@
 import { Highlighter } from "../components/ui/highlighter";
 
 export default function Description() {
-  const currentYear = new Date().getFullYear();
-  const experienceYears = currentYear - 2023;
-  const experienceText = experienceYears <= 1 
-    ? `${experienceYears} an` 
-    : `${experienceYears} ans`;
 
   return (
     <div>
-      Avec {experienceText} d’expérience.{" "}
+      Bonjour, je m'appelle Steeve.
       Je développe des applications web et mobiles avec les frameworks
       <Highlighter action="highlight" color="#FF9800">
         <b className="mx-2">JavaScript</b>
