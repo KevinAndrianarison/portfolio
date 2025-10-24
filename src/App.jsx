@@ -5,6 +5,7 @@ import NetworkList from "./NetworkList/NetworkList";
 import Stacks from "./Stacks/Stacks";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
+import Degree from "./Degree/Degree";
 import Footer from "./ReusableComponent/Footer";
 import Header from "./Header/Header";
 
@@ -20,6 +21,7 @@ function App() {
         </div>
         <Stacks />
         <Projects />
+        <Degree />
         <Contact />
         <Footer />
       </div>
