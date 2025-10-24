@@ -1,20 +1,20 @@
 import { Highlighter } from "../components/ui/highlighter";
+import { useTranslation } from "react-i18next";
 
 export default function Description() {
+  const { t } = useTranslation();
 
   return (
     <div>
-      Bonjour, je m'appelle Steeve.
-      Je développe des applications web et mobiles avec les frameworks
+      {t("descriptionOne")}
       <Highlighter action="highlight" color="#FF9800">
         <b className="mx-2">JavaScript</b>
       </Highlighter>
-      <span className="mx-2">et</span>
+      <span className="mx-2">{t("and")}</span>
       <Highlighter action="highlight" color="#FF9800">
         <b className="mx-2">PHP</b>
       </Highlighter>
-      . Je crée des solutions qui apportent une réelle valeur aux utilisateurs
-      et mets l’accent sur la satisfaction client dans chaque projet.
+      . {t("descriptionTwo")}
     </div>
   );
 }

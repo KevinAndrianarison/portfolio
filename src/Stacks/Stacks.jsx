@@ -1,9 +1,11 @@
 import Container from "../ReusableComponent/Container";
+import { useTranslation } from "react-i18next";
 
 export default function Stacks() {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-5">
-      <h1 className="text-3xl aref font-bold">Technologies & outils</h1>
+      <h1 className="text-3xl aref font-bold">{t("technologies")}</h1>
       <div className="flex gap-2 items-end flex-wrap">
         <Container logo="react" name="ReactJs" isStack />
         <Container logo="next" name="NextJs" isStack />
@@ -20,7 +22,7 @@ export default function Stacks() {
         <Container logo="npm" name="NPM" isStack />
         <Container logo="mysql" name="MySQL" isStack />
         <Container logo="mongodb" name="MongoDB" isStack />
-        <p className="aref">et bien d’autres...</p>
+        <p className="aref">{t("andMore")}</p>
       </div>
     </div>
   );

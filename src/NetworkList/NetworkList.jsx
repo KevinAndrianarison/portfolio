@@ -6,8 +6,10 @@ import {
 } from "@/components/ui/dropdown-menu";
 import ContentSelect from "../ReusableComponent/ContentSelect";
 import cvFr from "../assets/CV_ANDRIANARISON_Steeve Kevin.pdf";
+import { useTranslation } from "react-i18next";
 
 export default function NetworkList() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="flex gap-5 flex-wrap">
@@ -25,7 +27,7 @@ export default function NetworkList() {
         <DropdownMenu>
           <DropdownMenuTrigger className="focus:outline-none">
             <p className="bg-blue-800 p-1.5 px-8 cursor-pointer border-2 border-blue-600 rounded-full">
-              <FontAwesomeIcon icon="fa-download" /> Mon CV
+              <FontAwesomeIcon icon="fa-download" /> {t("cv")}
             </p>
           </DropdownMenuTrigger>
           <ContentSelect onclickFr={() => window.open(cvFr, "_blank")} />

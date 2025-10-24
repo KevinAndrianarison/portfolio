@@ -1,16 +1,17 @@
 import Project from "../ReusableComponent/Project";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-5">
-      <h1 className="text-3xl aref font-bold">Mes récentes réalisations</h1>
+      <h1 className="text-3xl aref font-bold">{t("recentProjects")}</h1>
       <div className="flex gap-5 flex-wrap">
         <Project
           name="E-laharagna"
           img="elaharagna"
-          description="Application de gestion de file d’attente pour organiser les tickets dans les
-agences de l’OTIV Diana."
-          status="En cours 🔄"
+          description={t("elaharagna")}
+          status={t("inProgress")}
           stacks={[
             { name: "ReactJs", logo: "react" },
             { name: "Laravel", logo: "laravel" },
@@ -21,9 +22,8 @@ agences de l’OTIV Diana."
           name="OTIV-Diana"
           img="otivdiana"
           link="https://otiv.irislan.mg"
-          description="Site web de l’OTIV Diana, mettant en avant
-les informations et les services proposés."
-          status="En cours 🔄"
+          description={t("otivdiana")}
+          status={t("inProgress")}
           stacks={[
             { name: "NextJs", logo: "next" },
             { name: "Laravel", logo: "laravel" },
@@ -34,9 +34,8 @@ les informations et les services proposés."
           name="GDS"
           img="gds"
           link="https://gds-front.ongsahi.org"
-          description="Application de gestion de stock pour
-l’ONG Sahi."
-          status="Terminé 🟢"
+          description={t("gds")}
+          status={t("finished")}
           stacks={[
             { name: "ReactJs", logo: "react" },
             { name: "Laravel", logo: "laravel" },
@@ -47,9 +46,8 @@ l’ONG Sahi."
           name="SendBazar"
           img="sendBazar"
           link="https://sendbazar.com"
-          description="Refonte complète du site web de SendBazar, migration de la
-version v1 sous WordPress vers une version v2 développée avec Next.js."
-          status="Terminé 🟢"
+          description={t("sendBazar")}
+          status={t("finished")}
           stacks={[
             { name: "NextJs", logo: "next" },
             { name: "Laravel", logo: "laravel" },
