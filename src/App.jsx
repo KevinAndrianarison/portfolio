@@ -17,8 +17,13 @@ function App() {
   useEffect(() => {
     const path = window.location.pathname.split("/").filter(Boolean);
     const lang = localStorage.getItem("lang");
-    if (!lang && path[0] !== "en" && path[0] !== "fr") {
-      window.location.replace("/en");
+    if (path[0] !== "en" && path[0] !== "fr") {
+      if (!lang) {
+        window.location.replace("/en");
+      }
+      if (lang) {
+        window.location.replace(lang);
+      }
     }
   }, []);
 
