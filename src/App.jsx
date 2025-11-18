@@ -16,13 +16,18 @@ function App() {
   const { theme } = useContext(ThemeContext);
   useEffect(() => {
     const path = window.location.pathname.split("/").filter(Boolean);
-    if (path[0] !== "en" && path[0] !== "fr") {
+    const lang = localStorage.getItem("lang");
+    if (!lang && path[0] !== "en" && path[0] !== "fr") {
       window.location.replace("/en");
     }
   }, []);
 
   return (
-    <div className={`${theme === "dark" ? "degradeDark" : "degradeLight"} funnel py-10`}>
+    <div
+      className={`${
+        theme === "dark" ? "degradeDark" : "degradeLight"
+      } funnel py-10`}
+    >
       <div className="flex flex-col gap-20 w-[50vw] max-lg:w-[80vw] mx-auto">
         <div className="flex flex-col gap-5">
           <Header />
