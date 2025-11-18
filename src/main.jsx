@@ -16,7 +16,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import '../i18n.js'; 
+import "../i18n.js";
+import { ThemeProvider } from "./Contexte/ThemeContext";
 
 library.add(
   faHouse,
@@ -31,6 +32,8 @@ library.add(
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <ThemeProvider>
       <App />
+    </ThemeProvider>
   </StrictMode>
 );

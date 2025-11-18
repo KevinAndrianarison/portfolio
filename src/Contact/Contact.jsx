@@ -1,18 +1,31 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { ThemeContext } from "../Contexte/ThemeContext";
 
 export default function Contact() {
   const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext);
   return (
     <div className="flex flex-col gap-5">
-      <h1 className="text-3xl aref font-bold">{t("discutons")}</h1>
-      <div className="border-2 border-gray-600 bg-gray-700 p-4 py-6 flex flex-col gap-5 items-center">
+      <h1
+        className={`${
+          theme === "dark" ? "" : "text-gray-800"
+        } text-3xl aref font-bold`}
+      >
+        {t("discutons")}
+      </h1>
+      <div
+        className={`${
+          theme === "dark" ? "bg-gray-700 border-2  border-gray-600" : ""
+        }   p-4 py-6 flex flex-col gap-5 items-center`}
+      >
         <FontAwesomeIcon
           icon="fa-regular fa-envelope"
           className="text-xl bg-blue-800 p-3 rounded border-2 border-blue-700 px-2.5"
         />
-        <h1 className="text-2xl text-center font-bold">{t("contact")}</h1>
-        <p className="mx-20 max-lg:mx-0 text-center text-gray-300">
+        <h1 className={`${theme === "dark" ? "" : "text-gray-800"} text-2xl text-center font-bold`}>{t("contact")}</h1>
+        <p className={`${theme === "dark" ? "text-gray-300" : "text-gray-600"} mx-20 max-lg:mx-0 text-center`}>
           {t("contactDesc")}
         </p>
         <div

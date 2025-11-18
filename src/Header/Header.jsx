@@ -6,9 +6,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 import ContentSelect from "../ReusableComponent/ContentSelect";
 import { useTranslation } from "react-i18next";
+import { ThemeContext } from "../Contexte/ThemeContext";
+import { useContext } from "react";
 
 export default function Header() {
   const { i18n } = useTranslation();
+  const { setTheme, theme } = useContext(ThemeContext);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -25,7 +28,11 @@ export default function Header() {
   return (
     <div className="flex justify-end items-center gap-4">
       <label className="ui-switch">
-        <input type="checkbox"></input>
+        <input
+          type="checkbox"
+          checked={theme === "dark"}
+          onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
+        ></input>
         <div className="slider">
           <div className="circle"></div>
         </div>
@@ -34,7 +41,7 @@ export default function Header() {
         <DropdownMenuTrigger className="focus:outline-none">
           <FontAwesomeIcon
             icon="fa-language"
-            className="text-xl cursor-pointer ease-in-out transition-all hover:bg-blue-900 p-2 rounded-lg"
+            className={`${theme === "dark" ? "hover:bg-blue-900" : "text-gray-800 hover:bg-gray-200"} text-xl cursor-pointer ease-in-out transition-all  p-2 rounded-lg`}
           />
         </DropdownMenuTrigger>
         <ContentSelect

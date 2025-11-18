@@ -1,10 +1,13 @@
 import Container from "../ReusableComponent/Container";
 import { useTranslation } from "react-i18next";
+import { ThemeContext } from "../Contexte/ThemeContext";
+import { useContext } from "react";
 
 export default function Stacks() {
   const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className="flex flex-col gap-5">
+    <div className={`${theme === "dark" ? "" : "text-gray-800"} flex flex-col gap-5`}>
       <h1 className="text-3xl aref font-bold">{t("technologies")}</h1>
       <div className="flex gap-2 items-end flex-wrap">
         <Container logo="react" name="ReactJs" isStack />

@@ -1,4 +1,4 @@
-.degrade {
+.degradeDark {
   background: radial-gradient(
     circle at top right,
     #1b1725,
@@ -7,6 +7,17 @@
     #0a0a14
   );
 }
+
+.degradeLight {
+  background: radial-gradient(
+    circle at top right,
+    #fdfdfd,  
+    #e6e9f5, 
+    #cfd8ff, 
+    #b3c7ff    
+  );
+}
+
 
 .profil {
   background-image: url("./assets/481664796_1712371896010528_6077784313028032134_n.jpg");
