@@ -4,6 +4,7 @@ import HttpBackend from "i18next-http-backend";
 
 const savedLang = localStorage.getItem("lang") || "en";
 
+
 i18n
   .use(HttpBackend)
   .use(initReactI18next)
